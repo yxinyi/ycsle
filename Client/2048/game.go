@@ -15,6 +15,7 @@
 package twenty48
 
 import (
+	"client/user"
 	"csmsg"
 	"fmt"
 	"github.com/hajimehoshi/ebiten/v2"
@@ -97,6 +98,11 @@ func (g *Game) Update() error {
 func (g *Game) Draw(screen *ebiten.Image) {
 	detailStr := fmt.Sprintf("%d", g.Count)
 	text.Draw(screen, detailStr, uiFont, 100, 100, color.White)
+
+	if user.U != nil {
+		detailStr = fmt.Sprintf("%d", user.U.LoginState)
+		text.Draw(screen, detailStr, uiFont, 100, 200, color.White)
+	}
 
 	/*	if g.boardImage == nil {
 			w, h := g.board.Size()
