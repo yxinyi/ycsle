@@ -24,15 +24,16 @@ import (
 	"golang.org/x/image/font/gofont/goregular"
 	"golang.org/x/image/font/opentype"
 	"image/color"
-	
+
 	"math/rand"
 	"time"
 )
 
 var (
-	uiFont                    font.Face
-	uiFontMHeight             int
+	uiFont        font.Face
+	uiFontMHeight int
 )
+
 func init() {
 	tt, err := opentype.Parse(goregular.TTF)
 	if err != nil {
@@ -92,44 +93,31 @@ func (g *Game) Update() error {
 	return nil
 }
 
-
 // Draw draws the current game to the given screen.
 func (g *Game) Draw(screen *ebiten.Image) {
 	detailStr := fmt.Sprintf("%d", g.Count)
-	text.Draw(screen, detailStr, uiFont,100,100, color.White)
-	
-/*	if g.boardImage == nil {
-		w, h := g.board.Size()
-		g.boardImage = ebiten.NewImage(w, h)
-	}
-	screen.Fill(backgroundColor)
-	g.board.Draw(g.boardImage)
-	op := &ebiten.DrawImageOptions{}
-	sw, sh := screen.Size()
-	bw, bh := g.boardImage.Size()
-	x := (sw - bw) / 2
-	y := (sh - bh) / 2
-	op.GeoM.Translate(float64(x), float64(y))
-	screen.DrawImage(g.boardImage, op)
-	
-*/
-	
+	text.Draw(screen, detailStr, uiFont, 100, 100, color.White)
+
+	/*	if g.boardImage == nil {
+			w, h := g.board.Size()
+			g.boardImage = ebiten.NewImage(w, h)
+		}
+		screen.Fill(backgroundColor)
+		g.board.Draw(g.boardImage)
+		op := &ebiten.DrawImageOptions{}
+		sw, sh := screen.Size()
+		bw, bh := g.boardImage.Size()
+		x := (sw - bw) / 2
+		y := (sh - bh) / 2
+		op.GeoM.Translate(float64(x), float64(y))
+		screen.DrawImage(g.boardImage, op)
+
+	*/
+
 }
 
 func (g *Game) EventRegister() {
-	csmsg.Processor.SetHandler(&csmsg.Hello{}, func(list []interface{}) {
-		/*		for _, it := range list {
-				log.Debug("name [%v] type [%v]", reflect.TypeOf(it).Elem().Name(), reflect.TypeOf(it).Kind().String())
-			}*/
-/*		msg := list[0].(*csmsg.Hello)
-		a := list[1].(*agent.Agent)
-		log.Debug("msg Count [%v]", msg.Count)
-		g.Count = msg.Count
-		a.WriteMsgWithMarshal(&csmsg.Hello{
-			Count: msg.Count + 1,
-		})*/
-	})
-	
+
 	csmsg.Processor.SetHandler(&csmsg.S2C_EnterSquare{}, func(list []interface{}) {
 		/*		for _, it := range list {
 				log.Debug("name [%v] type [%v]", reflect.TypeOf(it).Elem().Name(), reflect.TypeOf(it).Kind().String())
@@ -139,14 +127,5 @@ func (g *Game) EventRegister() {
 		//log.Debug("msg Count [%v]", msg.Count)
 		g.Count = msg.TotalCount
 	})
-	
-	csmsg.Processor.SetHandler(&csmsg.S2C_EnterSquare{}, func(list []interface{}) {
-		/*		for _, it := range list {
-				log.Debug("name [%v] type [%v]", reflect.TypeOf(it).Elem().Name(), reflect.TypeOf(it).Kind().String())
-			}*/
-		msg := list[0].(*csmsg.S2C_EnterSquare)
-		//a := list[1].(*agent.Agent)
-		//log.Debug("msg Count [%v]", msg.Count)
-		g.Count = msg.TotalCount
-	})
+
 }

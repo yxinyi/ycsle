@@ -8,10 +8,11 @@ import (
 var Processor = json.NewProcessor()
 
 func init() {
-	// 这里我们注册了一个 JSON 消息 Hello
 	Processor.Register(&Hello{})
 	Processor.Register(&C2S_EnterSquare{})
 	Processor.Register(&S2C_EnterSquare{})
+	Processor.Register(&C2S_Login{})
+	Processor.Register(&S2C_Login{})
 }
 
 // 一个结构体定义了一个 JSON 消息的格式
