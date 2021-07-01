@@ -16,8 +16,8 @@ var (
 
 func init() {
 	RegLoginFunc(func() {
-		U.WriteMsgWithMarshal(&csmsg.C2S_Login{})
-		U.LoginState = LOGIN_START
+		Obj.WriteMsgWithMarshal(&csmsg.C2S_Login{})
+		Obj.LoginState = LOGIN_START
 	})
 	EventRegister()
 }
@@ -26,8 +26,8 @@ func RegLoginFunc(f func()) {
 	funcList = append(funcList, f)
 }
 
-func LoginFunc(u *User) {
-	U = u
+func LoginFunc(u *MainUser) {
+	Obj = u
 	for _, funcIt := range funcList {
 		funcIt()
 	}
@@ -35,6 +35,6 @@ func LoginFunc(u *User) {
 
 func EventRegister() {
 	csmsg.Processor.SetHandler(&csmsg.S2C_Login{}, func(list []interface{}) {
-		U.LoginState = LOGIN_SUCCESS
+		Obj.LoginState = LOGIN_SUCCESS
 	})
 }

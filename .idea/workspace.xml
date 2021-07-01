@@ -3,71 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="49ca7a73-d409-4eca-8b85-1f60cd7762ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bin/Client.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Bin/Client.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bin/Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Bin/Server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/2048/game.go" beforeDir="false" afterPath="$PROJECT_DIR$/Client/2048/game.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/gate/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/gate/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/csmsg/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/csmsg/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/csmsg/msg.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/AUTHORS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/client_clone.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/client_clone_legacy.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/compression.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/conn.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/conn_write.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/conn_write_legacy.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/doc.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/join.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/json.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/mask.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/mask_safe.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/prepared.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/proxy.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/server.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/trace.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/trace_17.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/util.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/gorilla/websocket/x_net_proxy.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/TUTORIAL_EN.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/TUTORIAL_ZH.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/chanrpc/chanrpc.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/cluster/cluster.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/conf/conf.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/console/command.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/console/console.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/gate/agent.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/gate/gate.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/go/go.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/leaf.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/log/log.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/module/module.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/module/skeleton.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/agent.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/conn.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/json/json.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/processor.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/tcp_client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/tcp_conn.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/tcp_msg.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/tcp_server.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/ws_client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/ws_conn.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/network/ws_server.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/recordfile/recordfile.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/recordfile/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/timer/cronexpr.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/timer/timer.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/github.com/name5566/leaf/version.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/vendor/modules.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +20,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="3f9b9ed7-b668-47ac-b62e-2c65a72b8425" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -125,7 +63,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
@@ -185,9 +123,22 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="client add login protocl" />
-    <option name="LAST_COMMIT_MESSAGE" value="client add login protocl" />
+    <MESSAGE value="finish login logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish login logic" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

@@ -2,6 +2,7 @@ package main
 
 import (
 	"client/2048"
+	"client/scene"
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/name5566/leaf/log"
 )
@@ -13,7 +14,7 @@ func StartGame(){
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	
+	scene.ChangeScene("login")
 	game.EventRegister()
 	ebiten.SetWindowSize(twenty48.ScreenWidth, twenty48.ScreenHeight)
 	ebiten.SetWindowTitle("2048 (Ebiten Demo)")

@@ -15,6 +15,7 @@
 package twenty48
 
 import (
+	"client/scene"
 	"client/user"
 	"csmsg"
 	"fmt"
@@ -87,6 +88,8 @@ func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeigh
 
 // Update updates the current game state.
 func (g *Game) Update() error {
+	user.Obj.MsgRoute()
+	scene.Update()
 	g.input.Update()
 	if err := g.board.Update(g.input); err != nil {
 		return err
@@ -96,11 +99,12 @@ func (g *Game) Update() error {
 
 // Draw draws the current game to the given screen.
 func (g *Game) Draw(screen *ebiten.Image) {
+	scene.Draw(screen)
 	detailStr := fmt.Sprintf("%d", g.Count)
 	text.Draw(screen, detailStr, uiFont, 100, 100, color.White)
 
-	if user.U != nil {
-		detailStr = fmt.Sprintf("%d", user.U.LoginState)
+	if user.Obj != nil {
+		detailStr = fmt.Sprintf("%d", user.Obj.LoginState)
 		text.Draw(screen, detailStr, uiFont, 100, 200, color.White)
 	}
 
@@ -125,12 +129,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 func (g *Game) EventRegister() {
 
 	csmsg.Processor.SetHandler(&csmsg.S2C_EnterSquare{}, func(list []interface{}) {
-		/*		for _, it := range list {
-				log.Debug("name [%v] type [%v]", reflect.TypeOf(it).Elem().Name(), reflect.TypeOf(it).Kind().String())
-			}*/
 		msg := list[0].(*csmsg.S2C_EnterSquare)
-		//a := list[1].(*agent.Agent)
-		//log.Debug("msg Count [%v]", msg.Count)
 		g.Count = msg.TotalCount
 	})
 
